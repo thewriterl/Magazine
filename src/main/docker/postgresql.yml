@@ -1,0 +1,11 @@
+version: '2'
+services:
+  pixelmags-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/Pixelmags/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Pixelmags
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
